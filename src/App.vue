@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <ArithmeticCalculator /> <!-- Incluindo nosso componente -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ArithmeticCalculator from './components/ArithmeticCalculator.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    ArithmeticCalculator, // Registrando o componente
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 50px;
+}
+</style>
+
+<style>
+/* Estilos para a página principal */
+#app {
+  text-align: center;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 </style>
