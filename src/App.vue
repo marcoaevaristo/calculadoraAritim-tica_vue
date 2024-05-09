@@ -1,31 +1,26 @@
 <template>
   <div id="app">
-    <ArithmeticCalculator /> <!-- Incluindo nosso componente -->
+    <MinhaCalculadora />
   </div>
 </template>
 
 <script>
-import ArithmeticCalculator from './components/ArithmeticCalculator.vue';
+import MinhaCalculadora from './components/CalculadoraComponent.vue';
 
 export default {
+  name: 'App',
   components: {
-    ArithmeticCalculator, // Registrando o componente
+    MinhaCalculadora,
   },
 };
 </script>
 
-<style>
-#app {
-  text-align: center;
-  padding-top: 50px;
-}
-</style>
-
-<style>
+<style scoped>
 /* Estilos para a página principal */
 #app {
   text-align: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  color: #333;
+  padding: 20px;
 }
 </style>
